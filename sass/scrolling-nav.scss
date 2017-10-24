@@ -7,6 +7,8 @@
 @import "variables";
 @import "bootstrap";
 
+@import "mixins";
+
 body {
     width: 100%;
     height: 100%;
@@ -40,6 +42,10 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: $blue-royal;
 
+    @include mQ($screen-sm) {
+        background: $btn-info-color
+    }
+
     h1, .h1 {
         font-size: 72px;
     }
@@ -54,6 +60,10 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: $yellow-gold;
+
+    @include mQ($screen-sm) {
+        background: $btn-success-color
+    }
 }
 
 .services-section {
@@ -61,6 +71,10 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: $gray-silver;
+
+    @include mQ($screen-sm) {
+        background: $btn-warning-color
+    }
 }
 
 .contact-section {
@@ -68,4 +82,8 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: $orange-copper;
+
+    @include mQ($screen-sm) {
+        background: $btn-danger-color
+    }
 }
