@@ -39,6 +39,14 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: $blue-royal;
+
+    h1, .h1 {
+        font-size: 72px;
+    }
+
+    strong {
+        font-weight: 900;
+    }
 }
 
 .about-section {
